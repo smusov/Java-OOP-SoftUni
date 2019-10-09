@@ -1,4 +1,4 @@
-package AnimalFarm;
+package animalFarm;
 
 public class Chicken {
     private String name;

@@ -1,4 +1,4 @@
-package PizzaCalories;
+package pizzaCalories;
 
 public enum DoughModifiers {
 

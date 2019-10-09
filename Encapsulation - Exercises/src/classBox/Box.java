@@ -1,4 +1,4 @@
-package ClassBox;
+package classBox;
 
 public class Box {
 

@@ -1,4 +1,4 @@
-package PizzaCalories;
+package pizzaCalories;
 
 public enum ToppingsModifiers {
     Meat(1.2),

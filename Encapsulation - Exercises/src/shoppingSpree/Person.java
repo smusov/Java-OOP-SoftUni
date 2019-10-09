@@ -1,4 +1,4 @@
-package ShoppingSpree;
+package shoppingSpree;
 
 import java.util.ArrayList;
 import java.util.List;

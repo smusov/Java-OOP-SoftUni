@@ -1,4 +1,4 @@
-package PizzaCalories;
+package pizzaCalories;
 
 public class Topping {
     private static final double CALORIES = 2.0;
