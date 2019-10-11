@@ -1,13 +1,13 @@
-package carShop;
+package carShopExtend;
 
-public class Seat implements Car {
+public class CarImpl implements Car{
 
     private String model;
     private String color;
     private Integer horsePower;
     private String countryProduced;
 
-    public Seat(String model, String color, Integer horsePower, String countryProduced, double v) {
+    public CarImpl(String model, String color, Integer horsePower, String countryProduced) {
 
         this.model = model;
         this.color = color;
@@ -37,7 +37,6 @@ public class Seat implements Car {
 
     @Override
     public String toString() {
-        return String.format(
-                "This is %s produced in %s and have %d tires", getModel(), this.countryProduced, TIRES);
+        return String.format("This is %s produced in %s and have %d tires",getModel(),this.countryProduced(),TIRES);
     }
 }
