@@ -1,7 +1,7 @@
-package appenders;
+package logger.appenders;
 
-import enums.ReportLevel;
-import interfaces.Layout;
+import logger.enums.ReportLevel;
+import logger.interfaces.Layout;
 
 public class ConsoleAppender extends AppenderImpl {
 

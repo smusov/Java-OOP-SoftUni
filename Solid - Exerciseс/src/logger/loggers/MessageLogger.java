@@ -1,8 +1,8 @@
-package loggers;
+package logger.loggers;
 
-import interfaces.Logger;
-import enums.ReportLevel;
-import interfaces.Appender;
+import logger.interfaces.Logger;
+import logger.enums.ReportLevel;
+import logger.interfaces.Appender;
 
 import java.util.Arrays;
 

@@ -1,9 +1,9 @@
-package factories;
+package logger.factories;
 
-import interfaces.Appender;
-import interfaces.Factory;
-import interfaces.Logger;
-import loggers.MessageLogger;
+import logger.interfaces.Appender;
+import logger.interfaces.Factory;
+import logger.interfaces.Logger;
+import logger.loggers.MessageLogger;
 
 public class LoggerFactory implements Factory<Logger> {
 

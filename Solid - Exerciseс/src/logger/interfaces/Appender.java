@@ -1,6 +1,6 @@
-package interfaces;
+package logger.interfaces;
 
-import enums.ReportLevel;
+import logger.enums.ReportLevel;
 
 public interface Appender {
     void append(String time, String message, ReportLevel reportLevel);

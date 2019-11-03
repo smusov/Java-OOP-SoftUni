@@ -1,4 +1,4 @@
-package interfaces;
+package logger.interfaces;
 
 public interface File {
     boolean write();

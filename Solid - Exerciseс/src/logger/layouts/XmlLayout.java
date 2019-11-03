@@ -1,7 +1,7 @@
-package layouts;
+package logger.layouts;
 
-import enums.ReportLevel;
-import interfaces.Layout;
+import logger.enums.ReportLevel;
+import logger.interfaces.Layout;
 
 public class XmlLayout implements Layout {
     @Override

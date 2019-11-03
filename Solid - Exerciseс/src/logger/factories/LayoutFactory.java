@@ -1,9 +1,9 @@
-package factories;
+package logger.factories;
 
-import interfaces.Factory;
-import interfaces.Layout;
-import layouts.SimpleLayouts;
-import layouts.XmlLayout;
+import logger.interfaces.Factory;
+import logger.interfaces.Layout;
+import logger.layouts.SimpleLayouts;
+import logger.layouts.XmlLayout;
 
 public class LayoutFactory implements Factory<Layout> {
     @Override

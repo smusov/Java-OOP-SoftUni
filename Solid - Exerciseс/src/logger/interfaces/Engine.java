@@ -1,4 +1,4 @@
-package interfaces;
+package logger.interfaces;
 
 import java.io.BufferedReader;
 import java.io.IOException;

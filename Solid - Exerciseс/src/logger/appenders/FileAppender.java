@@ -1,9 +1,9 @@
-package appenders;
+package logger.appenders;
 
-import enums.ReportLevel;
-import interfaces.File;
-import interfaces.Layout;
-import logFiles.LogFile;
+import logger.enums.ReportLevel;
+import logger.interfaces.File;
+import logger.interfaces.Layout;
+import logger.logFiles.LogFile;
 
 public class FileAppender extends AppenderImpl {
 

@@ -1,8 +1,8 @@
-package controllers;
+package logger.controllers;
 
-import enums.ReportLevel;
-import interfaces.Engine;
-import interfaces.Logger;
+import logger.enums.ReportLevel;
+import logger.interfaces.Engine;
+import logger.interfaces.Logger;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,11 +1,11 @@
-package factories;
+package logger.factories;
 
-import appenders.ConsoleAppender;
-import appenders.FileAppender;
-import enums.ReportLevel;
-import interfaces.Appender;
-import interfaces.Factory;
-import interfaces.Layout;
+import logger.appenders.ConsoleAppender;
+import logger.appenders.FileAppender;
+import logger.enums.ReportLevel;
+import logger.interfaces.Appender;
+import logger.interfaces.Factory;
+import logger.interfaces.Layout;
 
 public class AppenderFactory implements Factory<Appender> {
 

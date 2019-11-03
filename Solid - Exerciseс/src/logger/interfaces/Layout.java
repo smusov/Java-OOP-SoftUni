@@ -1,6 +1,6 @@
-package interfaces;
+package logger.interfaces;
 
-import enums.ReportLevel;
+import logger.enums.ReportLevel;
 
 public interface Layout {
     String format(String time, String message, ReportLevel reportLevel);

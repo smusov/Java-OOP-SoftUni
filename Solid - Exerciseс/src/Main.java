@@ -1,9 +1,9 @@
-import controllers.EngineImp;
-import controllers.InputParser;
-import factories.LoggerFactory;
-import interfaces.Engine;
-import interfaces.Factory;
-import interfaces.Logger;
+import logger.controllers.EngineImp;
+import logger.controllers.InputParser;
+import logger.factories.LoggerFactory;
+import logger.interfaces.Engine;
+import logger.interfaces.Factory;
+import logger.interfaces.Logger;
 
 import java.io.BufferedReader;
 import java.io.IOException;

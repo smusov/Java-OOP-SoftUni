@@ -1,6 +1,6 @@
-package logFiles;
+package logger.logFiles;
 
-import interfaces.File;
+import logger.interfaces.File;
 
 import java.io.IOException;
 import java.nio.file.Files;

@@ -1,8 +1,8 @@
-package appenders;
+package logger.appenders;
 
-import enums.ReportLevel;
-import interfaces.Appender;
-import interfaces.Layout;
+import logger.enums.ReportLevel;
+import logger.interfaces.Appender;
+import logger.interfaces.Layout;
 
 public abstract class AppenderImpl implements Appender {
 
