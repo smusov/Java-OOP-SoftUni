@@ -1,3 +1,4 @@
+package skeleton;
 
 public class Hero {
 

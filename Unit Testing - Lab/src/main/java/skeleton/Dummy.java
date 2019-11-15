@@ -1,4 +1,4 @@
-
+package skeleton;
 
 public class Dummy {
 
@@ -16,7 +16,7 @@ public class Dummy {
 
     public void takeAttack(int attackPoints) {
         if (this.isDead()) {
-            throw new IllegalStateException("Dummy is dead.");
+            throw new IllegalStateException("skeleton.Dummy is dead.");
         }
 
         this.health -= attackPoints;

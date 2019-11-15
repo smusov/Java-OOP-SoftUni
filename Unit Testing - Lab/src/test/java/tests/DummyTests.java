@@ -1,5 +1,9 @@
+package tests;
+
 import org.junit.Assert;
 import org.junit.Test;
+import skeleton.Axe;
+import skeleton.Dummy;
 
 public class DummyTests {
 

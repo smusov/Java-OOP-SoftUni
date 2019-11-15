@@ -1,4 +1,4 @@
-
+package skeleton;
 
 public class Axe {
 
