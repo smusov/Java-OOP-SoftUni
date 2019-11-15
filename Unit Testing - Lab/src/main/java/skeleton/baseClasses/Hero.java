@@ -1,4 +1,4 @@
-package skeleton;
+package skeleton.baseClasses;
 
 public class Hero {
 

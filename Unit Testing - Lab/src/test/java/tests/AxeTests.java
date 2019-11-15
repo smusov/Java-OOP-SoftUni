@@ -2,8 +2,8 @@ package tests;
 
 import org.junit.Assert;
 import org.junit.Test;
-import skeleton.Axe;
-import skeleton.Dummy;
+import skeleton.baseClasses.Axe;
+import skeleton.baseClasses.Dummy;
 
 
 public class AxeTests {
