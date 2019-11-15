@@ -1,3 +1,5 @@
+package database;
+
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -24,9 +26,8 @@ public class DatabaseTests {
         this.database = new Database();
     }
 
-    @Test
     @Before
-    public void initializeValidObject() throws OperationNotSupportedException {
+    public void initializeDataBase() throws OperationNotSupportedException {
         this.database = new Database(validArray);
     }
 
