@@ -4,6 +4,8 @@ import org.junit.Assert;
 import org.junit.Test;
 import p04_BubbleSortTest.Bubble;
 
+import java.util.Arrays;
+
 public class BubbleSortTests {
     private static final int[] nums = {5, 47, 69, 58, 69, 71, 56,-88};
     private static final int[] sortedNums = {-88,5, 47, 56, 58, 69, 69, 71};
@@ -15,7 +17,8 @@ public class BubbleSortTests {
     }
     @Test
     public void untouchedSortedCollectionAfterSortAlgorithm(){
-        Bubble.sort(sortedNums);
-        Assert.assertArrayEquals(sortedNums,sortedNums);
+        int[] beforeSort = Arrays.copyOf(sortedNums,8);
+        Bubble.sort(beforeSort);
+        Assert.assertArrayEquals(sortedNums,beforeSort);
     }
 }
