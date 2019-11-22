@@ -3,6 +3,7 @@ package core.databases;
 import core.databases.interfaces.DumpHardwareDatabase;
 import models.hardwareComponents.interfaces.Hardware;
 
+import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -36,53 +37,12 @@ public class DumpHardwareDatabaseImpl extends HardwareDatabase implements DumpHa
     }
 
     @Override
-    public String getDumpAnalyse() {
-
-        StringBuilder sb = new StringBuilder();
-
-        sb.append("Dump Analysis").append(System.lineSeparator());
-        sb.append("Power Hardware Components: ").append(getHardwareCount("PowerHardware")).append(System.lineSeparator());
-        sb.append("Heavy Hardware Components: ").append(getHardwareCount("HeavyHardware")).append(System.lineSeparator());
-        sb.append("Express Software Components: ").append(getExpressSoftwareCount()).append(System.lineSeparator());
-        sb.append("Light Software Components: ").append(getLightSoftwareCount()).append(System.lineSeparator());
-        sb.append("Total Dumped Memory: ").append(getTotalDumpedMemory()).append(System.lineSeparator());
-        sb.append("Total Dumped Capacity: ").append(getTotalDumpedCapacity()).append(System.lineSeparator());
-
-        return sb.toString();
+    public int getDumpHardwaresSize() {
+        return this.dumpedHardware.size();
     }
 
-    private long getTotalDumpedCapacity() {
-        return this.dumpedHardware.values()
-                .stream()
-                .mapToInt(Hardware::getUsedCapacity)
-                .sum();
-    }
-
-    private long getTotalDumpedMemory() {
-        return this.dumpedHardware.values()
-                .stream()
-                .mapToInt(Hardware::getUsedMemory)
-                .sum();
-    }
-
-    private long getHardwareCount(String hardwareName) {
-        return this.dumpedHardware.values()
-                .stream()
-                .filter(e -> e.getClass().getSimpleName().equals(hardwareName))
-                .count();
-    }
-
-    private long getExpressSoftwareCount() {
-        return this.dumpedHardware.values()
-                .stream()
-                .mapToLong(Hardware::getExpressSoftwareComponentsCount)
-                .sum();
-    }
-
-    private long getLightSoftwareCount() {
-        return this.dumpedHardware.values()
-                .stream()
-                .mapToLong(Hardware::getLightSoftwareComponentsCount)
-                .sum();
+    @Override
+    public Map<String, Hardware> getDumpedHardware(){
+        return Collections.unmodifiableMap(this.dumpedHardware);
     }
 }
